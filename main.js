@@ -14,10 +14,10 @@ class Person {
   get age() {
     return this._age;
   }
-
-  description() {
-    newPerson.innerHTML = `Hello, ${this._firstName} ${this._lastName}! You are ${this._age} years old.`;
-  }
+   // calling description with new object created from the class. 
+  // description() {
+  //   newPerson.innerHTML = `Hello, ${this._firstName} ${this._lastName}! You are ${this._age} years old.`;
+  // }
 };
 
 const newPerson = document.getElementById("newObject");
@@ -30,7 +30,11 @@ const displayPerson = (e) => {
   const age = document.getElementById("age").value;
 
   const newPer = new Person(firstname, lastname, age);
-  newPer.description();
+  
+  newPerson.innerHTML = `Hello, ${newPer._firstName} ${newPer._lastName}! You are ${newPer._age} years old.`;
+  
+  // alternate way of calling description with new object.
+  // newPer.description();
 };
 
 btn.addEventListener("click", displayPerson);
