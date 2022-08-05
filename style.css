@@ -1,0 +1,31 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+input {
+    margin: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container-lg {
+    background-color: bisque;
+    height: 600px;
+    width: 600px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h1 {
+    color: skyblue;
+}
+
+#newObject {
+    font-size: x-large;
+}
